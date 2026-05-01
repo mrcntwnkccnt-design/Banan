@@ -1,0 +1,4 @@
+/workspaces/Banan/bananainjector_src/CMakeFiles/MinHook.dir
+/workspaces/Banan/bananainjector_src/CMakeFiles/bananainjector.exe.dir
+/workspaces/Banan/bananainjector_src/CMakeFiles/edit_cache.dir
+/workspaces/Banan/bananainjector_src/CMakeFiles/rebuild_cache.dir
