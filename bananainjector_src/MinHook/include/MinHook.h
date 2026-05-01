@@ -34,6 +34,17 @@
 
 #include <windows.h>
 
+// Fallback definitions for MSVC if needed
+#ifndef WINAPI
+    #define WINAPI __stdcall
+#endif
+#ifndef VOID
+    #define VOID void
+#endif
+#ifndef LPVOID
+    typedef void* LPVOID;
+#endif
+
 // MinHook Error Codes.
 typedef enum MH_STATUS
 {

@@ -28,6 +28,8 @@
 
 #pragma once
 
+#include <windows.h>
+
 // Size of each memory slot.
 #if defined(_M_X64) || defined(__x86_64__)
     #define MEMORY_SLOT_SIZE 64
@@ -41,6 +43,18 @@
 #endif
 #ifndef UINT
     typedef unsigned int UINT;
+#endif
+#ifndef WINAPI
+    #define WINAPI __stdcall
+#endif
+#ifndef VOID
+    #define VOID void
+#endif
+#ifndef LPVOID
+    typedef void* LPVOID;
+#endif
+#ifndef BOOL
+    typedef int BOOL;
 #endif
 
 VOID   InitializeBuffer(VOID);
