@@ -35,6 +35,14 @@
     #define MEMORY_SLOT_SIZE 32
 #endif
 
+// Ensure common integer types are defined for MSVC build
+#ifndef UINT8
+    typedef unsigned char UINT8;
+#endif
+#ifndef UINT
+    typedef unsigned int UINT;
+#endif
+
 VOID   InitializeBuffer(VOID);
 VOID   UninitializeBuffer(VOID);
 LPVOID AllocateBuffer(LPVOID pOrigin);
